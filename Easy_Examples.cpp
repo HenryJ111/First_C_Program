@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -122,12 +123,35 @@ void inputStream() {
     cout << "Please type the day below:" << endl;
     cin >> day;
 
-    cout << "Today's date is: " << month << " " << day << ", " << year << endl;
+    cout << "Today's date is: " << month << " " << day << ", " << year << endl;   
 } 
+
+//Input stream with multiple words(don't mix input type; just use one or the other)
+void inputSentence() {
+    string sentence;
+
+    cout << "Type a sentence here:" << endl;
+    getline(cin,sentence);
+
+    cout << "Your sentence is: \"" << sentence << "\"" << endl;
+}
+
+//Casting using stringstreams(string to a different variable type)
+void stringStreamTest() {
+    string number1 = "1234";
+    int number2 = 1234;
+
+    int covertedNumber1;
+
+    stringstream(number1) >> covertedNumber1;
+
+    cout << "Are these two variables the same?" << endl;
+    cout << ((number2 == covertedNumber1) ? "True" : "False") << endl;
+}
 
 int main() {
 
-    inputStream();
+    stringStreamTest();
     return 0;
 }
 
