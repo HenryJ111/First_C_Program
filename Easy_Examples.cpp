@@ -2,6 +2,7 @@
 // July 21, 2021
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 //Basic hello world program
@@ -38,8 +39,46 @@ void characterEscapes() {
     cout << "BING\aBING\a" << endl;
 }
 
+//Testing simple arethmetic
+void simpleMath() {
+    int x = 3;
+    int y = 2;
+
+    cout << x + y << endl;
+    cout << x - y << endl;
+    cout << x * y << endl;
+    cout << x / y << endl;
+    cout << x % y << endl;
+}
+
+//Variable modification shorthands
+void variableModification() {
+    int x = 3;
+    int y = 2;
+
+    x += y;
+    x -= y;
+    x *= y;
+    x /= y;
+    ++x;
+    --x;
+
+    cout << x << endl;
+}
+
+//Exploring boolean operations
+void booleanOperators() {
+    int x = 3;
+    int y = 2;
+
+    cout << (x == y) << endl;
+    cout << (x != y) << endl;
+    cout << (x > y) << endl;
+    cout << (x < y) << endl;
+}
+
 int main() {
-    characterEscapes();
+    booleanOperators();
     return 0;
 }
 
