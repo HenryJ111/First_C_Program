@@ -98,6 +98,8 @@ void castingTest() {
 
 int main() {
     castingTest();
+    booleanOperators();
+    variableModification();
     return 0;
 }
 
