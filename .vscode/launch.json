@@ -15,6 +15,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
+            "terminal": "integrated",
             "preLaunchTask": "C/C++: clang++ build active file"
         }
     ]

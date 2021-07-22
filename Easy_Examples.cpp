@@ -96,10 +96,38 @@ void castingTest() {
     cout << sizeof(x) << endl;
 }
 
+//Output stream(cout = computer out)
+void outputStream() {
+    int year = 2021;
+    string month = "July";
+    int day = 22;
+
+    cout << "The year is" << " " << year << endl;
+    cout << "The date is " << month << " " << day << endl;
+}
+
+//Input stream(cin = computer in)
+void inputStream() {
+    int year;
+    string month;
+    int day;
+
+
+    cout << "Please type the year below:" << endl;
+    cin >> year;
+
+    cout << "Please type the month below:" << endl;
+    cin >> month;
+
+    cout << "Please type the day below:" << endl;
+    cin >> day;
+
+    cout << "Today's date is: " << month << " " << day << ", " << year << endl;
+} 
+
 int main() {
-    castingTest();
-    booleanOperators();
-    variableModification();
+
+    inputStream();
     return 0;
 }
 
