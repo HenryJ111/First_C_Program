@@ -1,5 +1,6 @@
 // Hello World!!!
 // July 21, 2021
+
 #include <iostream>
 #include <string>
 
@@ -75,10 +76,28 @@ void booleanOperators() {
     cout << (x != y) << endl;
     cout << (x > y) << endl;
     cout << (x < y) << endl;
+
+    cout << ((x < y) && (x != y)) << endl;
+    cout << ((x < y) || (x != y)) << endl;
+
+    cout << ((x == y) ? "True" : "False") << endl;
+    cout << ((x != y) ? "True" : "False") << endl;
+}
+
+//Changing variable types
+void castingTest() {
+    double x = 10.321;
+
+    int y = x;
+
+    double z = int(x);
+
+    cout << to_string(x) + " " + to_string(y) + " " + to_string(z) << endl;
+    cout << sizeof(x) << endl;
 }
 
 int main() {
-    booleanOperators();
+    castingTest();
     return 0;
 }
 
